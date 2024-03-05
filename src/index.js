@@ -1,27 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Car from './Car.js';
 import reportWebVitals from './reportWebVitals';
-
+import Garage from './Garage';
+// import Table from './Table';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // const introduction = <p> This is my first react program. I am excited to learn all about react.</p>
-// const table = (
-//   <table>
-//     <tr>
-//       <th>Name</th>
-//       <th>Field of specialization</th>
-//     </tr>
-//     <tr>
-//       <td>Marcus Aurelius</td>
-//       <td>Stoicism</td>
-//     </tr>
-//     <tr>
-//       <td>Fredrick Neitzche</td>
-//       <td>Existentialism</td>
-//     </tr>
-//   </table>
-// )
-
 // const myElement = (
 //   <>
 //     <p>Paragraph 1</p>
@@ -33,23 +16,18 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // const anotherElement = <h1 className='myclass'>{(x) < 10 ? '{ x } is less than 10' :'is greater or equal to 10'}</h1>;
 
 
-function Garage() {
-  const carInfo = {
-    name: 'Ford', model: 'Mustang'
-  };
-  return(
-    <>
-      <h1> Who lives in my garage?</h1>
-      <Car brand= { carInfo} />
-    </>
-  );
-}
+
 root.render(
  
   // anotherElement
   // <Car color='black' />
   <Garage />
+
 );
+
+// root.render(
+//   <Table />
+// )
 
 // root.render(myElement);
 
